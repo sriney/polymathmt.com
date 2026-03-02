@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polymath LLC — Management & Advisory</title>
+<meta name="description" content="Polymath LLC is a Montana-based management company operating across technology advisory, aviation, agriculture, and real estate development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+        --ink: #1a1a1a;
+        --paper: #f7f5f0;
+        --stone: #8a8578;
+        --rule: #d6d1c7;
+        --accent: #2c3e2e;
+        --warm: #e8e3da;
+    }
+
+    body {
+        font-family: 'Nunito Sans', sans-serif;
+        background: var(--paper);
+        color: var(--ink);
+        line-height: 1.7;
+        font-weight: 300;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 80px 32px 60px;
+    }
+
+    /* ── Header ── */
+    .mark {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--stone);
+        margin-bottom: 64px;
+        position: relative;
+        display: inline-block;
+    }
+    .mark::after {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        width: 32px;
+        height: 1.5px;
+        background: var(--accent);
+    }
+
+    /* ── Hero ── */
+    h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(36px, 5.5vw, 54px);
+        font-weight: 400;
+        line-height: 1.15;
+        letter-spacing: -0.5px;
+        color: var(--ink);
+        margin-bottom: 32px;
+    }
+    h1 em {
+        font-style: italic;
+        color: var(--accent);
+    }
+
+    .lead {
+        font-size: 17px;
+        color: var(--stone);
+        max-width: 540px;
+        margin-bottom: 72px;
+        line-height: 1.8;
+    }
+
+    /* ── Divider ── */
+    .rule {
+        width: 100%;
+        height: 1px;
+        background: var(--rule);
+        margin: 56px 0;
+    }
+
+    /* ── Sectors ── */
+    .sectors {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 48px;
+        margin-bottom: 8px;
+    }
+    @media (max-width: 540px) { .sectors { grid-template-columns: 1fr; gap: 28px; } }
+
+    .sector h3 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: var(--ink);
+    }
+    .sector p {
+        font-size: 14px;
+        color: var(--stone);
+        line-height: 1.75;
+    }
+
+    /* ── Contact ── */
+    .contact-block {
+        background: var(--warm);
+        border-radius: 4px;
+        padding: 36px 40px;
+        margin-top: 8px;
+    }
+    .contact-block h2 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    .contact-block p {
+        font-size: 14px;
+        color: var(--stone);
+        line-height: 1.8;
+    }
+    .contact-block a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid var(--rule);
+        transition: border-color 0.2s;
+    }
+    .contact-block a:hover { border-color: var(--accent); }
+
+    /* ── Footer / Legal ── */
+    footer {
+        margin-top: 80px;
+        padding-top: 32px;
+        border-top: 1px solid var(--rule);
+        font-size: 12px;
+        color: var(--stone);
+        line-height: 1.7;
+    }
+    footer a {
+        color: var(--stone);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s;
+    }
+    footer a:hover { border-color: var(--stone); }
+
+    /* ── Privacy Policy section ── */
+    .privacy {
+        margin-top: 80px;
+        padding-top: 48px;
+        border-top: 1px solid var(--rule);
+    }
+    .privacy h2 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 32px;
+    }
+    .privacy h3 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 28px 0 10px;
+        color: var(--ink);
+    }
+    .privacy p, .privacy li {
+        font-size: 14px;
+        color: #4a4a4a;
+        line-height: 1.85;
+    }
+    .privacy ul {
+        padding-left: 20px;
+        margin: 8px 0 16px;
+    }
+    .privacy li { margin-bottom: 4px; }
+    .privacy .effective {
+        font-size: 13px;
+        color: var(--stone);
+        margin-bottom: 24px;
+    }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+    <!-- Header -->
+    <div class="mark">Polymath</div>
+
+    <!-- Hero -->
+    <h1>Management &<br><em>advisory</em> across<br>multiple sectors</h1>
+    <p class="lead">
+        Polymath LLC is a Montana-based management company operating
+        at the intersection of technology, aviation, agriculture, and
+        real estate development.
+    </p>
+
+    <!-- Sectors -->
+    <div class="sectors">
+        <div class="sector">
+            <h3>Technology Advisory</h3>
+            <p>Fractional executive roles and strategic advisory for AI-powered platforms, SaaS businesses, and early-stage technology companies.</p>
+        </div>
+        <div class="sector">
+            <h3>Aviation</h3>
+            <p>Aircraft operations and management supporting business travel, advisory engagements, and portfolio company oversight across multiple states.</p>
+        </div>
+        <div class="sector">
+            <h3>Agriculture</h3>
+            <p>Hay production and farmland management across working acreage in the Northeast, with a focus on sustainable land stewardship.</p>
+        </div>
+        <div class="sector">
+            <h3>Real Estate</h3>
+            <p>Development and investment in hospitality and residential properties in Montana and New York.</p>
+        </div>
+    </div>
+
+    <div class="rule"></div>
+
+    <!-- Contact -->
+    <div class="contact-block">
+        <h2>Contact</h2>
+        <p>
+            Polymath LLC<br>
+            PO Box 110<br>
+            Cameron, MT 59720<br><br>
+            <a href="mailto:llc@polymathmt.com">llc@polymathmt.com</a>
+        </p>
+    </div>
+
+    <!-- Privacy Policy -->
+    <div class="privacy" id="privacy">
+        <h2>Privacy Policy</h2>
+        <p class="effective">Effective date: March 1, 2026</p>
+
+        <p>Polymath LLC and its affiliated applications ("we," "us," or "our") are committed to protecting your privacy. This policy describes how we collect, use, and safeguard information when you use our applications and services.</p>
+
+        <h3>Information We Collect</h3>
+        <p>We may collect the following categories of information:</p>
+        <ul>
+            <li>Account information: name, email address, and authentication credentials</li>
+            <li>Athlete profiles: name, sport, age or grade level (provided by parent or guardian)</li>
+            <li>Video recordings: sprint and training videos submitted for analysis</li>
+            <li>Analysis data: biomechanical assessments generated from submitted videos</li>
+            <li>Usage data: app interactions, session timestamps, and device information</li>
+            <li>Feedback: user-submitted comments, bug reports, and feature requests</li>
+        </ul>
+
+        <h3>How We Use Information</h3>
+        <p>We use collected information to provide and improve our analysis services, generate personalized training recommendations, track athlete progress over time, respond to user feedback, and maintain the security of our systems. We do not sell or share personal information with third parties for advertising purposes.</p>
+
+        <h3>Children's Privacy (COPPA)</h3>
+        <p>Our applications may be used by athletes under the age of 13. We require verifiable parental consent before collecting any personal information from children under 13. Parents and guardians may review, modify, or request deletion of their child's information at any time by contacting us. We collect only the minimum information necessary to provide our services and do not serve targeted advertising to any users.</p>
+
+        <h3>Data Storage and Security</h3>
+        <p>Information is stored using industry-standard cloud infrastructure with encryption in transit and at rest. Video recordings are processed on secure servers and are not shared publicly. Access to personal data is restricted to authorized personnel and automated systems necessary for service delivery.</p>
+
+        <h3>Data Retention and Deletion</h3>
+        <p>Account data is retained while your account is active. You may request deletion of your account and all associated data at any time. Video recordings and analysis data can be individually deleted from within the application. Upon account deletion, all personal data is removed within 30 days.</p>
+
+        <h3>Your Rights</h3>
+        <p>You have the right to access, correct, or delete your personal information. You may export your data or request a copy at any time. To exercise these rights, contact us at the address below.</p>
+
+        <h3>Changes to This Policy</h3>
+        <p>We may update this policy from time to time. Material changes will be communicated through our applications or via email. Continued use of our services after changes constitutes acceptance of the updated policy.</p>
+
+        <h3>Contact</h3>
+        <p>For privacy inquiries, data requests, or COPPA-related concerns:</p>
+        <p>
+            Polymath LLC<br>
+            PO Box 110<br>
+            Cameron, MT 59720<br>
+            <a href="mailto:llc@polymathmt.com">llc@polymathmt.com</a>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Polymath LLC. All rights reserved. &nbsp;&middot;&nbsp; <a href="#privacy">Privacy Policy</a></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
